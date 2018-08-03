@@ -1,0 +1,7 @@
+{
+  "name": "WeAreMusicos",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
