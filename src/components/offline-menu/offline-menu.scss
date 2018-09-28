@@ -1,15 +1,16 @@
 offline-menu {
-  ion-avatar > img{
-    height: 100px !important;
-    width: 100px !important;
-    margin: auto;
+  ion-col{
+    color: #707070;
+    margin: 0px;
+    
+
+    img{
+      height: 23px;
+    }
   }
 
-  ion-avatar{
-    text-align: center;
-  }
-
-  ion-grid > ion-row{
-    height: 100% !important;
+  ion-row{
+    border-bottom: 1px solid color($colors, light_grey);
+    min-height: 50px;
   }
 }

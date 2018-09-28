@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 23.63 28.724">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #cbcbcb;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_251" data-name="Rectangle 251" class="cls-1" width="23.629" height="28.724" transform="translate(83 182)"/>
+    </clipPath>
+  </defs>
+  <g id="voir_son_profil_en_temps_que" data-name="voir son profil en temps que" class="cls-2" transform="translate(-83 -182)">
+    <path id="user-edit" class="cls-1" d="M8.271,9.849A4.828,4.828,0,0,0,13,4.924,4.828,4.828,0,0,0,8.271,0,4.828,4.828,0,0,0,3.545,4.924,4.828,4.828,0,0,0,8.271,9.849Zm3.308,1.231h-.617a6.193,6.193,0,0,1-5.383,0H4.962A5.071,5.071,0,0,0,0,16.25v1.6A1.811,1.811,0,0,0,1.772,19.7h10.15a1.92,1.92,0,0,1-.1-.819l.251-2.343.044-.427.292-.3,2.854-2.974A4.831,4.831,0,0,0,11.579,11.08Zm1.673,5.59L13,19.016a.6.6,0,0,0,.65.677l2.249-.262,5.092-5.305-2.647-2.758Zm10.12-6.325-1.4-1.458a.86.86,0,0,0-1.248,0l-1.4,1.454-.151.158,2.651,2.758,1.543-1.608A.954.954,0,0,0,23.372,10.345Z" transform="translate(83 186.513)"/>
+  </g>
+</svg>

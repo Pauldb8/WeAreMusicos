@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 23">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: #cbcbcb;
+      }
+
+      .cls-1 {
+        stroke: #707070;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_249" data-name="Rectangle 249" class="cls-1" width="24" height="23" transform="translate(14 637)"/>
+    </clipPath>
+  </defs>
+  <g id="musique" class="cls-2" transform="translate(-14 -637)">
+    <path id="signature" class="cls-3" d="M23.25,15H18.944c-.435,0-.924-.53-1.208-1.337a4.429,4.429,0,0,0-4.022-3.3,4.135,4.135,0,0,0-3.568,2.308L9.131,4.992A2.4,2.4,0,0,0,6.857,3,2.4,2.4,0,0,0,4.583,4.992l-1.951,8.33C2.377,14.412,1.77,15,1.328,15H.75a.75.75,0,0,0-.75.75v1.5A.75.75,0,0,0,.75,18h.578c1.967,0,3.665-1.6,4.225-3.994L6.671,9.235,8.042,19.647A1.534,1.534,0,0,0,9.4,20.994c.046,0,.092.006.137.006a1.5,1.5,0,0,0,1.439-1.076l1.548-5.266c.276-.784.743-1.29,1.191-1.29s.916.506,1.208,1.337A4.429,4.429,0,0,0,18.944,18H23.25a.75.75,0,0,0,.75-.75v-1.5A.75.75,0,0,0,23.25,15Z" transform="translate(14 636.5)"/>
+  </g>
+</svg>

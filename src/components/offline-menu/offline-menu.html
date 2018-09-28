@@ -1,25 +1,67 @@
 <ion-nav #offline_menu [root]="rootPage"></ion-nav>
 
 <ion-menu [content]="offline_menu">
+
   <ion-header>
     <ion-toolbar>
-      <ion-title text-center><img src="/assets/imgs/wamlogo.svg" height="40"></ion-title>
+      <ion-title text-center>Menu</ion-title>
     </ion-toolbar>
   </ion-header>
+
   <ion-content>
-    <ion-item>
-      <ion-avatar>
-        <img src="/assets/imgs/allan_profile.jpg" height="100">
-      </ion-avatar>
-    </ion-item>
-    <ion-list>
-      <p text-center><em>Vous êtes déconnecté.</em></p> 
-    </ion-list> 
     <ion-grid>
-      <ion-row align-items-center> 
-        <ion-col>
-          Connectez vous pour accéder à plus de fonctionnalités.
-        </ion-col>
+      <ion-row>
+        <ion-col col-auto align-self-center><img src="/assets/imgs/wamlogo_dark_grey.svg"></ion-col>
+        <ion-col align-self-center>Actualités</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-auto align-self-center><img src="/assets/imgs/profil.svg"></ion-col>
+        <ion-col align-self-center>Profil</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-auto align-self-center><img src="/assets/imgs/publier.svg"></ion-col>
+        <ion-col align-self-center>Publier</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-auto align-self-center><img src="/assets/imgs/messagerie.svg"></ion-col>
+        <ion-col align-self-center>Messagerie</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-auto align-self-center><img src="/assets/imgs/service.svg"></ion-col>
+        <ion-col align-self-center>Proposer des services</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-auto align-self-center><img src="/assets/imgs/vendre.svg"></ion-col>
+        <ion-col align-self-center>Vendre du matons</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-auto align-self-center><img src="/assets/imgs/publier.svg"></ion-col>
+        <ion-col align-self-center>Question à la communauté</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-auto align-self-center><img src="/assets/imgs/calendrier.svg"></ion-col>
+        <ion-col align-self-center>Événements de la communauté</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-auto align-self-center><img src="/assets/imgs/musique.svg"></ion-col>
+        <ion-col align-self-center>Musique</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-auto align-self-center><img src="/assets/imgs/activite.svg"></ion-col>
+        <ion-col align-self-center>Accéder à mes activités</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-auto align-self-center><img src="/assets/imgs/profile_as.svg"></ion-col>
+        <ion-col align-self-center>Voir son profil en tant que...</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-auto align-self-center><img src="/assets/imgs/parametres.svg"></ion-col>
+        <ion-col align-self-center>Paramètres du compte</ion-col>
+      </ion-row>
+      <ion-row>
+        
+        <ion-col align-self-center>Paramètres du compte</ion-col>
+        <ion-col col-auto align-self-center><img src="/assets/imgs/parametres.svg"></ion-col>
       </ion-row>
     </ion-grid>
   </ion-content>
