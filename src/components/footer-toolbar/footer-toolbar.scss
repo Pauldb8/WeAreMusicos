@@ -1,0 +1,26 @@
+footer-toolbar {
+  .text-on-bottom > .button-inner {
+    flex-direction: column;
+    font-size: 0.9em;
+    text-transform: none;
+    color: color($colors, dark_grey);
+  }
+
+  .active > .button-inner{
+    font-size: 1em;
+    color: darken(color($colors, dark_grey), 25%);
+  }
+
+  .active > img{
+    height: 32px; 
+  }
+
+  .text-on-bottom ion-icon{
+    font-size: 2em;
+  }
+
+  ion-buttons{
+    display: flex;
+    justify-content: space-evenly;
+  }
+}

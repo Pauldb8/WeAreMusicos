@@ -1,0 +1,146 @@
+<ion-header>
+  <ion-navbar hideBackButton >
+
+      <button ion-button menuToggle>
+        <ion-icon name="more"></ion-icon>
+      </button>
+      <ion-searchbar
+        [(ngModel)]="myInput"
+        [showCancelButton]="shouldShowCancel"
+        (ionCancel)="onCancel($event)">
+      </ion-searchbar>
+      <!-- (ionInput)="onInput($event)" -->
+
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content class="bg-style">
+  <ion-row margin-bottom>
+    <ion-col col-12 no-padding padding-left>
+      <ion-item no-lines class="no-borders">
+        <ion-avatar item-start>
+            <img src="../../assets/imgs/allan_profile.jpg"/>
+        </ion-avatar>
+        <h1>Allan François</h1>
+        <p>allan.françois@wearemusicos.com</p>
+        <ion-badge>WAM PARTNER ♦</ion-badge>
+        <ion-badge>Recording Studio</ion-badge>
+        <br />
+        <ion-badge color="primary">Guitariste</ion-badge>
+        <ion-badge>...</ion-badge>
+      </ion-item>
+    </ion-col>
+    <ion-col col-12 no-padding>
+      <p text-center>Ceci est une introduction éditable.</p>
+    </ion-col>
+  </ion-row>
+  <ion-row class="wam_menu" margin-bottom>
+    <ion-col text-center>
+      <ion-icon name="create" color="primary" ></ion-icon><br>
+      <p>Publier</p>
+    </ion-col>
+    <ion-col text-center>
+      <ion-icon name="person"></ion-icon><br>
+      <p>Modifier le profil</p>
+    </ion-col>
+    <ion-col text-center>
+      <ion-icon name="list"></ion-icon><br>
+      <p>Historique personnel</p>
+    </ion-col>
+    <ion-col text-center>
+    <ion-icon name="musical-notes"></ion-icon><br>
+      <p>Playlists</p>
+    </ion-col>
+    <ion-col text-center>
+      <ion-icon name="more"></ion-icon><br>
+        <p>Plus</p>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col class="bg-style" margin-left>
+      Toutes les photos
+    </ion-col>
+  </ion-row>
+  <ion-scroll scrollX="true" >
+      <ion-col>
+        <img src="../../assets/imgs/photo.jpg">
+      </ion-col>
+      <ion-col>
+        <img src="../../assets/imgs/photo1.png">
+      </ion-col>
+      <ion-col>
+        <img src="../../assets/imgs/photo2.jpg">
+      </ion-col>
+      <ion-col>
+        <img src="../../assets/imgs/photo3.jpg">
+      </ion-col>
+      <ion-col>
+        <img src="../../assets/imgs/photo4.jpg">
+      </ion-col>
+  </ion-scroll>
+  <ion-row margin-top>
+    <ion-col class="bg-style" margin-left>
+      Publications
+    </ion-col>
+  </ion-row>
+  <ion-row class="post">
+    <ion-col col-12 no-padding padding-left>
+      <ion-item no-lines class="no-borders">
+        <ion-avatar item-start no-margin>
+            <img src="../../assets/imgs/allan_profile.jpg"/>
+        </ion-avatar>
+        <ion-col no-padding>
+          Allan François
+        </ion-col>
+        <ion-col class="light">
+          17:53 08/08/201
+        </ion-col>
+        <ion-col class="light">
+          <ion-icon name="globe"></ion-icon>
+          La Hulpe, BE
+        </ion-col>
+        <h2>Les frelons se repèrent dans leurs déplacements grâce à la lumière de la lune</h2>
+        <ion-col class="light"><ion-icon name="thumbs-up"></ion-icon> 43 565 889</ion-col>
+        <ion-col class="light">Commenter</ion-col>
+        <ion-col class="light">Partager</ion-col>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="post" no-margin *ngFor="let comment of comments; let last = last;">
+      <ion-col no-margin no-padding padding-top>
+        <ion-row class="comment">
+            <ion-col>
+            Anonymous
+            <span class="light"> | 18:29 09/08/2019</span>
+          </ion-col>
+        </ion-row>
+        <ion-row class="comment">
+          <ion-col>
+            {{ comment.comment }}
+          </ion-col>
+        </ion-row>
+        <ion-row class="comment" justify-content-end>
+          <ion-col>
+            <ion-icon name="thumbs-up"></ion-icon> 3
+          </ion-col>
+          <ion-col>Commenter</ion-col>
+          <ion-col>Partager</ion-col>
+        </ion-row>
+        <ion-row class="comment" margin-top margin-bottom *ngIf="last">
+          <ion-col text-right>
+            <form (ngSubmit)="saveComment()">
+              <ion-input placeholder="Commenter" type="text" [(ngModel)]="newcomment.comment" name="comment">Commenter</ion-input>
+              <ion-col>
+                <button big ion-button clear (click)="chooseFile()"><ion-icon name="camera"></ion-icon></button>
+              </ion-col>
+              <ion-col>
+                <button small ion-button type="submit" clear >Send</button> 
+              </ion-col>
+            </form>  
+          </ion-col>       
+        </ion-row>
+      </ion-col>
+    </ion-row> 
+</ion-content>

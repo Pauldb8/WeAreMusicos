@@ -1,0 +1,64 @@
+page-profile {
+
+  ion-avatar{
+    img{
+      width: 100px !important;
+      height: 100px !important;
+    }
+  }
+
+  .bg-style {
+    background: #f4f4f4;
+    color: #747474;
+  }
+
+  ion-col{
+    background-color: white;
+  }
+
+  .scroll-content{
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  ion-scroll{
+    height: 116px;
+    white-space: nowrap;
+    background-color: white;
+    padding-top: 8px !important;
+
+    ion-col{
+      padding: 0px !important;
+      img{
+        max-height: 100px;
+      }
+    }
+  }
+
+  .post{
+    ion-avatar{
+      img{
+        width: 50px !important;
+        height: 50px !important;
+      }
+    }
+    ion-col{
+      font-size: 0.9em;
+    }
+    .light{
+      color: color($colors, dark_grey);
+    }
+  }
+
+  .comment{
+    ion-col{
+      background-color: color($colors, grey) !important;
+    }
+    ion-input{
+      background-color: white;
+    }
+  }
+
+  h2{
+    white-space: normal !important;
+  }
+}

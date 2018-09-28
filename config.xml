@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="io.ionic.starter" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>WeAreMusicos</name>
-    <description>An awesome Ionic/Cordova app.</description>
-    <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>
+<widget id="com.wearemusicos.app" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>We Are Musicos</name>
+    <description>We Are Musicos is a platform for music and its corresponding services.</description>
+    <author email="info@wearemusicos.com" href="http://wearemusicos.com/">We Are Musicos</author>
     <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
@@ -78,7 +78,19 @@
     </platform>
     <plugin name="cordova-plugin-whitelist" spec="1.3.3" />
     <plugin name="cordova-plugin-device" spec="2.0.2" />
-    <plugin name="cordova-plugin-splashscreen" spec="5.0.2" />
     <plugin name="cordova-plugin-ionic-webview" spec="^2.0.0" />
     <plugin name="cordova-plugin-ionic-keyboard" spec="^2.0.5" />
+    <plugin name="cordova-plugin-facebook4" spec="^2.3.0">
+        <variable name="APP_ID" value="1897119430593381" />
+        <variable name="APP_NAME" value="WeAreMusicos" />
+    </plugin>
+    <plugin name="cordova-plugin-filechooser" spec="^1.0.1" />
+    <allow-navigation href="http://192.168.1.33:8100" />
+    <plugin name="cordova-plugin-splashscreen" spec="^5.0.2" />
+    <allow-navigation href="http://192.168.1.33:8101" />
+    <allow-navigation href="http://192.168.1.33:8102" />
+    <allow-navigation href="http://192.168.1.33:8104" />
+    <plugin name="cordova-plugin-statusbar" spec="^2.4.2" />
+    <engine name="android" spec="7.0.0" />
+    <engine name="ios" spec="4.5.5" />
 </widget>

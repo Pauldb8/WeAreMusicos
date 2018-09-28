@@ -1,14 +1,151 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>
-      Ionic Blank
+    <button ion-button [menuToggle]="activeMenu">
+      <ion-icon name="menu" color="white"></ion-icon>
+    </button>
+    <ion-title text-center>
+      WE ARE MUSICOS
     </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only color="white">
+        <ion-icon name="search"></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<offline-menu></offline-menu>
+
+<ion-content>
+  <ion-grid class="search" no-padding hidden>
+    <ion-row padding>
+      <ion-col col-12>
+        <h2><ion-icon name="search"></ion-icon> Rechercher</h2>
+        <p>Destination / Type de service / <br>Nom de l'établissement :</p>
+        <ion-list>
+          <ion-item> 
+            <ion-input type="text" placeholder="Rechercher" no-margin>
+            </ion-input>
+            <button ion-button clear color="dark" type="button" item-right (click)="managePassword()"> <ion-icon big name="locate"> </ion-icon> </button>
+          </ion-item>
+        </ion-list>
+        <ion-list>
+          <ion-item>
+            <ion-label>Catégorie</ion-label>
+            <ion-select>
+              <ion-option value="all">Toutes</ion-option>
+              <ion-option value="n64">Guitare</ion-option>
+              <ion-option value="ps">Basse</ion-option>
+              <ion-option value="genesis">Batterie</ion-option>
+            </ion-select>
+          </ion-item>
+        </ion-list>
+        <ion-row>
+          <ion-col col-6 no-padding padding-right>
+            <ion-input type="text" placeholder="Code postal"></ion-input>
+          </ion-col>
+          <ion-col col-6 no-padding>
+            <ion-range>
+              <span range-left>0Km</span>
+              <span range-right>100Km</span>
+            </ion-range>
+          </ion-col>         
+        </ion-row>
+        <ion-row radio-group margin-bottom>
+          <ion-col col-6 no-margin no-padding padding-right>
+            <ion-item>
+              <ion-label class="label" >Loisir</ion-label>
+              <ion-radio checked="true" value="loisir"></ion-radio>
+            </ion-item>
+          </ion-col>
+          <ion-col col-6 no-margin no-padding> 
+            <ion-item>
+              <ion-label>Professionnel</ion-label>
+              <ion-radio value="pro"></ion-radio>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <button ion-button color="red" class="center" full (click)="openProfile()">Rechercher</button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-12 no-padding no-margin>
+        <img src="../../assets/imgs/map.png">
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-row class="search">
+    <ion-col>
+      <p text-center>
+        <img src="../../assets/imgs/wamlogo.svg" height="33" (click)="openProfile()">
+      </p>
+      <p text-center>
+        Bienvenue à la communauté, ici vous trouverez lorem ipsum. Dolore sit amer como estas margarita
+        Avec ceci cela, comme ci comme ça, ton père ta mère, ma fille.<br>
+        <br>
+        <a (click)="login()">Se connecter</a>
+      </p>
+    </ion-col>
+  </ion-row>
+  <ion-row padding-top>
+    <ion-col col-12 padding-left>
+      <span class="hastag" margin-right>
+        <ion-icon name="globe"></ion-icon>
+        Offres privées
+      </span>
+      <span class="hastag" margin-right>
+        <ion-icon name="add"></ion-icon>
+        Proposer une offre
+      </span>
+      <span class="hastag">
+        <ion-icon name="funnel"></ion-icon>
+      </span>
+    </ion-col>
+  </ion-row>
+  <ion-card *ngFor="let service of services">
+    <ion-row>
+      <ion-col col-6 no-padding>
+        <img src="http://debuck.info:3000/{{ service.image }}">
+      </ion-col>
+      <ion-col col-6>
+        <h2>{{ service.title }}</h2>
+        <h3>Durée 3 mois</h3>
+        <p>
+          {{ service.description | slice:0:80 }}...
+        </p>
+        <ion-icon name="star-outline"></ion-icon>
+        <ion-icon name="star-outline"></ion-icon>
+        <ion-icon name="star-outline"></ion-icon>
+        <ion-icon name="star-outline"></ion-icon>
+        <ion-icon name="star-outline"></ion-icon>
+        <p text-right float-right>1254 avis</p>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+  <!--ion-card>
+    <ion-row>
+      <ion-col col-6 no-padding>
+        <img src="../../assets/imgs/son.png">
+      </ion-col>
+      <ion-col col-6>
+        <h2>Formation ingénieur du son</h2>
+        <h3>Durée: 3 mois</h3>
+        <p>
+          Il reste 3 places<br />
+          5km, La Hulpe
+        </p>
+        <ion-icon name="star-outline"></ion-icon>
+        <ion-icon name="star-outline"></ion-icon>
+        <ion-icon name="star-outline"></ion-icon>
+        <ion-icon name="star-outline"></ion-icon>
+        <ion-icon name="star-outline"></ion-icon>
+        <p text-right float-right>1254 avis</p>
+        
+      </ion-col>
+    </ion-row>
+  </ion-card-->
 </ion-content>
+
+<ion-footer>
+  <footer-toolbar [page]="home"></footer-toolbar> 
+</ion-footer>

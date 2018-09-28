@@ -14,3 +14,140 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+.center{
+  margin: auto;
+}
+
+/**
+ * We Are Musicos INPUTS 
+ */
+ion-input{
+  background-color: white;
+  border-radius: 3px;
+  margin-bottom: 8px;
+  font-family: 'Open Sans';
+  padding-left: 8px;
+}
+ion-searchbar{
+  border-radius: 3px;
+  font-family: 'Open Sans';
+  color: white;
+}
+ion-avatar{
+  border-radius: 50% !important;
+}
+ion-col{
+  border-radius: none;
+}
+
+.no-border{
+  border: none !important;
+}
+
+.searchbar-input{
+  background-color: darken(color($colors, primary), 25%) !important; 
+  box-shadow: none !important;
+  padding: 0px;
+  border-radius: 5px !important;
+  color: white !important;
+}
+
+.searchbar-search-icon{
+  color: white !important;
+}
+.text-input{
+  margin-left: 0px;
+} 
+
+ion-item.item{
+  padding: 0px 0px 0px 0px;
+  font-family: 'Open Sans';
+  font-size: 1em;
+  border-radius: 3px; 
+}
+
+.button{
+  padding: 24px;
+  font-family: 'Open Sans';
+  text-transform: none;
+  border-radius: 3px;
+  margin: 0px !important;
+  .icon{
+    font-size: 1.8em;
+    color:  color($colors, red, base); 
+  }
+}
+
+.hastag{
+  border: 1px solid grey;
+  border-radius: 3px;
+  padding: 4px 8px 4px 8px;
+  background-color: white !important;
+  font-size: 0.8em;
+  ion-icon{
+    color: grey;
+    font-size: 1.4em;
+    position: relative;
+    top: 2px;
+  }
+}
+
+ion-card{
+  h2{
+    font-size: 1.0em !important;
+  }
+  h3{
+    font-size: 0.9em !important;
+  }
+  p {
+    font-size: 0.8em !important;
+  }
+  img{
+    height: 100%;
+    max-height: 150px;
+    width: 100%;
+    object-fit: fill;
+  }
+}
+
+/**
+ * TOOLBAR Header 
+ */
+.toolbar-background{
+  background-color: color($colors, red, base);
+  color: white;
+}
+.toolbar-title{
+   color: white;
+   font-family: Oswald;
+   font-size: 2em;
+}
+
+.toolbar-footer{
+  border-top: 1px solid color($colors, grey); 
+}
+
+.list{
+   margin-bottom: 8px;
+   border-radius: 3px;
+}
+
+.range{
+  padding: 0px;
+  background-color: white;
+  border-radius: 3px;
+  padding: 1px 4px;
+}
+
+.wam_menu{
+  ion-icon{
+    font-size: 2em;
+    margin: 4px;
+    color: color($colors, dark_grey);
+  }
+  p{
+    color: color($colors, dark_grey);
+    margin: 0px;
+  }
+}

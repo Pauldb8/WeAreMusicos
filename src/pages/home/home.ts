@@ -1,14 +1,42 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { HttpClient } from '../../../node_modules/@angular/common/http';
+import { ApiProvider } from '../../providers/api/api';
+import { ProfilePage } from '../profile/profile';
+import { StatusBar } from '@ionic-native/status-bar';
+import { SignInPage } from '../sign-in/sign-in';
 
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
 })
 export class HomePage {
+  services: any = [];
 
-  constructor(public navCtrl: NavController) {
-
+  constructor(public navCtrl: NavController, public httpClient: HttpClient,
+  public apiProvider: ApiProvider, private statusBar: StatusBar) {
+    this.getServices();
+    console.log(this.services);
+    statusBar.show();
   }
 
+  getServices(){
+    this.apiProvider.getServices().then(data => {
+      this.services = data['services']
+      console.log(this.services); 
+    });  
+  }
+
+  openProfile(){
+    this.navCtrl.push(ProfilePage);
+  }
+
+  login(){
+    this.navCtrl.push(SignInPage); 
+  } 
+
+  ionViewDidLoad() {
+    this.statusBar.show(); 
+  }
 }
+ 

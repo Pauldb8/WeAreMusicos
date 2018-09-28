@@ -1,0 +1,15 @@
+offline-menu {
+  ion-avatar > img{
+    height: 100px !important;
+    width: 100px !important;
+    margin: auto;
+  }
+
+  ion-avatar{
+    text-align: center;
+  }
+
+  ion-grid > ion-row{
+    height: 100% !important;
+  }
+}

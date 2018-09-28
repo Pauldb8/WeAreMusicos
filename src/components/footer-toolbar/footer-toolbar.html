@@ -1,0 +1,25 @@
+<!-- Generated template for the FooterToolbarComponent component -->
+<ion-toolbar color="white" class="toolbar-footer" no-padding> 
+  <ion-buttons>
+    <button ion-button class="text-on-bottom active" [class.active]="page == 'home'">
+      <img src="assets/imgs/wamlogo_dark_grey.svg" height="24">   
+      Accueil
+    </button>
+    <button ion-button class="text-on-bottom" [class.active]="page == 'login'" (click)="login()">
+      <ion-icon name="person"></ion-icon>
+      Se connecter
+    </button>
+    <button ion-button class="text-on-bottom" [class.active]="page == 'projects'"> 
+      <ion-icon name="filing"></ion-icon>
+      Projet
+    </button>
+    <button ion-button class="text-on-bottom" [class.active]="page == 'notifications'">
+      <ion-icon name="globe"></ion-icon>
+      Notifications
+    </button>
+    <button ion-button class="text-on-bottom" [class.active]="page == 'more'">
+      <ion-icon name="more"></ion-icon>
+      Plus
+    </button>
+  </ion-buttons>
+</ion-toolbar>
