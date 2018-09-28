@@ -1,0 +1,19 @@
+<svg id="Symbole_3_1" data-name="Symbole 3 – 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 194.487 203.276">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #b4b4b4;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        stroke: #fff;
+        fill-opacity: 1;
+      }
+    </style>
+  </defs>
+  <path id="Tracé_8" data-name="Tracé 8" class="cls-1" d="M594.625,413.422l32.088.109L649.17,499.9l58.588.021L676.678,616.7l-32.231-.1-22.261-86.7H598.551l-22.542,86.739h-32.1L513.271,499.8l58.494,0Z" transform="translate(-513.271 -413.422)"/>
+  <path id="Tracé_9" data-name="Tracé 9" class="cls-2" d="M624.26,514.076l5.737-22.4,3.784,13.93.444,1.637,1.855,6.831Z" transform="translate(-533.864 -427.942)"/>
+  <path id="Tracé_10" data-name="Tracé 10" class="cls-2" d="M688.4,556.445h11.911L694.5,579.208Z" transform="translate(-545.766 -439.959)"/>
+  <path id="Tracé_11" data-name="Tracé 11" class="cls-2" d="M561.935,556.422H573.85l-5.842,22.822Z" transform="translate(-522.3 -439.955)"/>
+</svg>
