@@ -14,6 +14,8 @@ import { CategoryPage } from '../category/category';
 export class HomePage {
   services: any = [];
 
+  recherche: any = "gone";
+
   constructor(public navCtrl: NavController, public httpClient: HttpClient,
   public apiProvider: ApiProvider, private statusBar: StatusBar) {
     this.getServices();
@@ -38,6 +40,13 @@ export class HomePage {
 
   ionViewDidLoad() {
     this.statusBar.show(); 
+  }
+  ShowHideSearch(){
+    if(this.recherche == "gone"){
+      this.recherche = "visible";
+    }else{
+      this.recherche = "gone";
+    }
   }
 }
   

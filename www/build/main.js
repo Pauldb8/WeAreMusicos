@@ -260,9 +260,9 @@ webpackEmptyAsyncContext.id = 158;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(31);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__node_modules_angular_common_http__ = __webpack_require__(101);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_api_api__ = __webpack_require__(102);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(51);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__sign_in_sign_in__ = __webpack_require__(104);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__category_category__ = __webpack_require__(281);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__profile_profile__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_status_bar__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__sign_in_sign_in__ = __webpack_require__(104);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -298,22 +298,22 @@ var HomePage = /** @class */ (function () {
         });
     };
     HomePage.prototype.openProfile = function () {
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_6__category_category__["a" /* CategoryPage */]);
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_4__profile_profile__["a" /* ProfilePage */]);
     };
     HomePage.prototype.login = function () {
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_5__sign_in_sign_in__["a" /* SignInPage */]);
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_6__sign_in_sign_in__["a" /* SignInPage */]);
     };
     HomePage.prototype.ionViewDidLoad = function () {
         this.statusBar.show();
     };
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"/Users/wamhouse/Desktop/AppWam/Ionic/WeAreMusicos/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button [menuToggle]="activeMenu">\n      <ion-icon name="menu" color="white"></ion-icon>\n    </button>\n    <ion-title text-center>\n      WE ARE MUSICOS\n    </ion-title>\n    <ion-buttons end>\n      <button ion-button icon-only color="white">\n        <ion-icon name="search"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<offline-menu></offline-menu>\n\n<ion-content>\n  <ion-grid class="search" no-padding hidden>\n    <ion-row padding>\n      <ion-col col-12>\n        <h2><ion-icon name="search"></ion-icon> Rechercher</h2>\n        <p>Destination / Type de service / <br>Nom de l\'établissement :</p>\n        <ion-list>\n          <ion-item> \n            <ion-input type="text" placeholder="Rechercher" no-margin>\n            </ion-input>\n            <button ion-button clear color="dark" type="button" item-right (click)="managePassword()"> <ion-icon big name="locate"> </ion-icon> </button>\n          </ion-item>\n        </ion-list>\n        <ion-list>\n          <ion-item>\n            <ion-label>Catégorie</ion-label>\n            <ion-select>\n              <ion-option value="all">Toutes</ion-option>\n              <ion-option value="n64">Guitare</ion-option>\n              <ion-option value="ps">Basse</ion-option>\n              <ion-option value="genesis">Batterie</ion-option>\n            </ion-select>\n          </ion-item>\n        </ion-list>\n        <ion-row>\n          <ion-col col-6 no-padding padding-right>\n            <ion-input type="text" placeholder="Code postal"></ion-input>\n          </ion-col>\n          <ion-col col-6 no-padding>\n            <ion-range>\n              <span range-left>0Km</span>\n              <span range-right>100Km</span>\n            </ion-range>\n          </ion-col>         \n        </ion-row>\n        <ion-row radio-group margin-bottom>\n          <ion-col col-6 no-margin no-padding padding-right>\n            <ion-item>\n              <ion-label class="label" >Loisir</ion-label>\n              <ion-radio checked="true" value="loisir"></ion-radio>\n            </ion-item>\n          </ion-col>\n          <ion-col col-6 no-margin no-padding> \n            <ion-item>\n              <ion-label>Professionnel</ion-label>\n              <ion-radio value="pro"></ion-radio>\n            </ion-item>\n          </ion-col>\n        </ion-row>\n        <button ion-button color="red" class="center" full (click)="openProfile()">Rechercher</button>\n      </ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col col-12 no-padding no-margin>\n        <img src="../../assets/imgs/map.png">\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n  <ion-row class="search">\n    <ion-col>\n      <p text-center>\n        <img src="../../assets/imgs/wamlogo.svg" height="33" (click)="openProfile()">\n      </p>\n      <p text-center>\n        Bienvenue à la communauté, ici vous trouverez lorem ipsum. Dolore sit amer como estas margarita\n        Avec ceci cela, comme ci comme ça, ton père ta mère, ma fille.<br>\n        <br>\n        <a (click)="login()">Se connecter</a>\n      </p>\n    </ion-col>\n  </ion-row>\n  <ion-row padding-top>\n    <ion-col col-12 padding-left>\n      <span class="hastag" margin-right>\n        <ion-icon name="globe"></ion-icon>\n        Offres privées\n      </span>\n      <span class="hastag" margin-right>\n        <ion-icon name="add"></ion-icon>\n        Proposer une offre\n      </span>\n      <span class="hastag">\n        <ion-icon name="funnel"></ion-icon>\n      </span>\n    </ion-col>\n  </ion-row>\n  <ion-card *ngFor="let service of services">\n    <ion-row>\n      <ion-col col-6 no-padding>\n        <img src="http://debuck.info:3000/{{ service.image }}">\n      </ion-col>\n      <ion-col col-6>\n        <h2>{{ service.title }}</h2>\n        <h3>Durée 3 mois</h3>\n        <p>\n          {{ service.description | slice:0:80 }}...\n        </p>\n        <ion-icon name="star-outline"></ion-icon>\n        <ion-icon name="star-outline"></ion-icon>\n        <ion-icon name="star-outline"></ion-icon>\n        <ion-icon name="star-outline"></ion-icon>\n        <ion-icon name="star-outline"></ion-icon>\n        <p text-right float-right>1254 avis</p>\n      </ion-col>\n    </ion-row>\n  </ion-card>\n  <!--ion-card>\n    <ion-row>\n      <ion-col col-6 no-padding>\n        <img src="../../assets/imgs/son.png">\n      </ion-col>\n      <ion-col col-6>\n        <h2>Formation ingénieur du son</h2>\n        <h3>Durée: 3 mois</h3>\n        <p>\n          Il reste 3 places<br />\n          5km, La Hulpe\n        </p>\n        <ion-icon name="star-outline"></ion-icon>\n        <ion-icon name="star-outline"></ion-icon>\n        <ion-icon name="star-outline"></ion-icon>\n        <ion-icon name="star-outline"></ion-icon>\n        <ion-icon name="star-outline"></ion-icon>\n        <p text-right float-right>1254 avis</p>\n        \n      </ion-col>\n    </ion-row>\n  </ion-card-->\n</ion-content>\n\n<ion-footer>\n  <footer-toolbar [page]="home"></footer-toolbar> \n</ion-footer>\n'/*ion-inline-end:"/Users/wamhouse/Desktop/AppWam/Ionic/WeAreMusicos/src/pages/home/home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"/Users/wamhouse/Desktop/AppWam/Ionic/WeAreMusicos/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button [menuToggle]="activeMenu">\n      <ion-icon name="menu" color="white"></ion-icon>\n    </button>\n    <ion-title text-center>\n      WE ARE MUSICOS\n    </ion-title>\n    <ion-buttons end>\n      <button ion-button icon-only color="white">\n        <ion-icon name="search" (click)="ShowHideSearch"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<offline-menu></offline-menu>\n\n<ion-content>\n  <ion-grid class="search" no-padding [style.visibility]="recherche">\n    <ion-row padding>\n      <ion-col col-12>\n        <h2><ion-icon name="search"></ion-icon> Rechercher</h2>\n        <p>Destination / Type de service / <br>Nom de l\'établissement :</p>\n        <ion-list>\n          <ion-item> \n            <ion-input type="text" placeholder="Rechercher" no-margin>\n            </ion-input>\n            <button ion-button clear color="dark" type="button" item-right (click)="managePassword()"> <ion-icon big name="locate"> </ion-icon> </button>\n          </ion-item>\n        </ion-list>\n        <ion-list>\n          <ion-item>\n            <ion-label>Catégorie</ion-label>\n            <ion-select>\n              <ion-option value="all">Toutes</ion-option>\n              <ion-option value="n64">Guitare</ion-option>\n              <ion-option value="ps">Basse</ion-option>\n              <ion-option value="genesis">Batterie</ion-option>\n            </ion-select>\n          </ion-item>\n        </ion-list>\n        <ion-row>\n          <ion-col col-6 no-padding padding-right>\n            <ion-input type="text" placeholder="Code postal"></ion-input>\n          </ion-col>\n          <ion-col col-6 no-padding>\n            <ion-range>\n              <span range-left>0Km</span>\n              <span range-right>100Km</span>\n            </ion-range>\n          </ion-col>         \n        </ion-row>\n        <ion-row radio-group margin-bottom>\n          <ion-col col-6 no-margin no-padding padding-right>\n            <ion-item>\n              <ion-label class="label" >Loisir</ion-label>\n              <ion-radio checked="true" value="loisir"></ion-radio>\n            </ion-item>\n          </ion-col>\n          <ion-col col-6 no-margin no-padding> \n            <ion-item>\n              <ion-label>Professionnel</ion-label>\n              <ion-radio value="pro"></ion-radio>\n            </ion-item>\n          </ion-col>\n        </ion-row>\n        <button ion-button color="red" class="center" full (click)="openProfile()">Rechercher</button>\n      </ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col col-12 no-padding no-margin>\n        <img src="../../assets/imgs/map.png">\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n  <ion-row class="search">\n    <ion-col>\n      <p text-center>\n        <img src="../../assets/imgs/wamlogo.svg" height="33" (click)="openProfile()">\n      </p>\n      <p text-center>\n        Bienvenue à la communauté, ici vous trouverez lorem ipsum. Dolore sit amer como estas margarita\n        Avec ceci cela, comme ci comme ça, ton père ta mère, ma fille.<br>\n        <br>\n        <a (click)="login()">Se connecter</a>\n      </p>\n    </ion-col>\n  </ion-row>\n  <ion-row padding-top>\n    <ion-col col-12 padding-left>\n      <span class="hastag" margin-right>\n        <ion-icon name="globe"></ion-icon>\n        Offres privées\n      </span>\n      <span class="hastag" margin-right>\n        <ion-icon name="add"></ion-icon>\n        Proposer une offre\n      </span>\n      <span class="hastag">\n        <ion-icon name="funnel"></ion-icon>\n      </span>\n    </ion-col>\n  </ion-row>\n  <ion-card *ngFor="let service of services">\n    <ion-row>\n      <ion-col col-6 no-padding>\n        <img src="http://debuck.info:3000/{{ service.image }}">\n      </ion-col>\n      <ion-col col-6>\n        <h2>{{ service.title }}</h2>\n        <h3>Durée 3 mois</h3>\n        <p>\n          {{ service.description | slice:0:80 }}...\n        </p>\n        <ion-icon name="star-outline"></ion-icon>\n        <ion-icon name="star-outline"></ion-icon>\n        <ion-icon name="star-outline"></ion-icon>\n        <ion-icon name="star-outline"></ion-icon>\n        <ion-icon name="star-outline"></ion-icon>\n        <p text-right float-right>1254 avis</p>\n      </ion-col>\n    </ion-row>\n  </ion-card>\n  <!--ion-card>\n    <ion-row>\n      <ion-col col-6 no-padding>\n        <img src="../../assets/imgs/son.png">\n      </ion-col>\n      <ion-col col-6>\n        <h2>Formation ingénieur du son</h2>\n        <h3>Durée: 3 mois</h3>\n        <p>\n          Il reste 3 places<br />\n          5km, La Hulpe\n        </p>\n        <ion-icon name="star-outline"></ion-icon>\n        <ion-icon name="star-outline"></ion-icon>\n        <ion-icon name="star-outline"></ion-icon>\n        <ion-icon name="star-outline"></ion-icon>\n        <ion-icon name="star-outline"></ion-icon>\n        <p text-right float-right>1254 avis</p>\n        \n      </ion-col>\n    </ion-row>\n  </ion-card-->\n</ion-content>\n\n<ion-footer>\n  <footer-toolbar [page]="home"></footer-toolbar> \n</ion-footer>\n'/*ion-inline-end:"/Users/wamhouse/Desktop/AppWam/Ionic/WeAreMusicos/src/pages/home/home.html"*/
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__node_modules_angular_common_http__["a" /* HttpClient */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__node_modules_angular_common_http__["a" /* HttpClient */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__providers_api_api__["a" /* ApiProvider */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__providers_api_api__["a" /* ApiProvider */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__["a" /* StatusBar */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__["a" /* StatusBar */]) === "function" && _d || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */], __WEBPACK_IMPORTED_MODULE_2__node_modules_angular_common_http__["a" /* HttpClient */],
+            __WEBPACK_IMPORTED_MODULE_3__providers_api_api__["a" /* ApiProvider */], __WEBPACK_IMPORTED_MODULE_5__ionic_native_status_bar__["a" /* StatusBar */]])
     ], HomePage);
     return HomePage;
-    var _a, _b, _c, _d;
 }());
 
 //# sourceMappingURL=home.js.map
@@ -354,7 +354,6 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_sign_in_sign_in__ = __webpack_require__(104);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_footer_toolbar_footer_toolbar__ = __webpack_require__(279);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_offline_menu_offline_menu__ = __webpack_require__(280);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_category_category__ = __webpack_require__(281);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -376,21 +375,18 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["I" /* NgModule */])({
-            // Add page here
             declarations: [
                 __WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* MyApp */],
                 __WEBPACK_IMPORTED_MODULE_6__pages_home_home__["a" /* HomePage */],
                 __WEBPACK_IMPORTED_MODULE_9__pages_profile_profile__["a" /* ProfilePage */],
                 __WEBPACK_IMPORTED_MODULE_12__pages_sign_in_sign_in__["a" /* SignInPage */],
                 __WEBPACK_IMPORTED_MODULE_13__components_footer_toolbar_footer_toolbar__["a" /* FooterToolbarComponent */],
-                __WEBPACK_IMPORTED_MODULE_14__components_offline_menu_offline_menu__["a" /* OfflineMenuComponent */],
-                __WEBPACK_IMPORTED_MODULE_15__pages_category_category__["a" /* CategoryPage */],
+                __WEBPACK_IMPORTED_MODULE_14__components_offline_menu_offline_menu__["a" /* OfflineMenuComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -399,14 +395,12 @@ var AppModule = /** @class */ (function () {
                     links: []
                 })
             ],
-            //and here
             bootstrap: [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["a" /* IonicApp */]],
             entryComponents: [
                 __WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* MyApp */],
                 __WEBPACK_IMPORTED_MODULE_6__pages_home_home__["a" /* HomePage */],
                 __WEBPACK_IMPORTED_MODULE_9__pages_profile_profile__["a" /* ProfilePage */],
                 __WEBPACK_IMPORTED_MODULE_12__pages_sign_in_sign_in__["a" /* SignInPage */],
-                __WEBPACK_IMPORTED_MODULE_15__pages_category_category__["a" /* CategoryPage */],
             ],
             providers: [
                 __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__["a" /* StatusBar */],
@@ -564,51 +558,6 @@ var OfflineMenuComponent = /** @class */ (function () {
 }());
 
 //# sourceMappingURL=offline-menu.js.map
-
-/***/ }),
-
-/***/ 281:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CategoryPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(31);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-/**
- * Generated class for the CategoryPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var CategoryPage = /** @class */ (function () {
-    function CategoryPage(navCtrl, navParams) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-    }
-    CategoryPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad CategoryPage');
-    };
-    CategoryPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-category',template:/*ion-inline-start:"/Users/wamhouse/Desktop/AppWam/Ionic/WeAreMusicos/src/pages/category/category.html"*/'<!--\n  Generated template for the CategoryPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>categorie guitare</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content no-padding>\n    <ion-grid no-padding>\n\n\n        <h3>Catégories</h3>\n\n      \n        <ion-row>\n            <ion-col align-self-center>Guitare</ion-col>\n          <ion-col col-auto align-self-center>\n            <ion-avatar item-start>  \n              <img src="/assets/imgs/studio.png"></ion-avatar></ion-col>\n            \n        </ion-row>\n        <ion-row>\n            <ion-col align-self-center>Basse</ion-col>\n          <ion-col col-auto align-self-center><img src="/assets/imgs/profil.svg"></ion-col>\n          \n        </ion-row>\n        <ion-row>\n            <ion-col align-self-center>Batterie</ion-col>\n          <ion-col col-auto align-self-center><img src="/assets/imgs/publier.svg"></ion-col>\n          \n        </ion-row>\n        <ion-row>\n            <ion-col align-self-center>Piano</ion-col>\n          <ion-col col-auto align-self-center><img src="/assets/imgs/messagerie.svg"></ion-col>\n         \n        </ion-row>\n        <ion-row>\n            <ion-col align-self-center>Synthétiseur</ion-col>\n          <ion-col col-auto align-self-center><img src="/assets/imgs/service.svg"></ion-col>\n         \n        </ion-row>\n        <ion-row>\n            <ion-col align-self-center>Clavier</ion-col>\n          <ion-col col-auto align-self-center><img src="/assets/imgs/vendre.svg"></ion-col>\n          \n        </ion-row>\n        <ion-row>\n            <ion-col align-self-center>Instruments à vent</ion-col>\n          <ion-col col-auto align-self-center><img src="/assets/imgs/publier.svg"></ion-col>\n          \n        </ion-row>\n        <ion-row>\n            <ion-col align-self-center>Sonorisation</ion-col>\n          <ion-col col-auto align-self-center><img src="/assets/imgs/calendrier.svg"></ion-col>\n         \n        </ion-row>\n        <ion-row>\n            <ion-col align-self-center>Pro audio</ion-col>\n          <ion-col col-auto align-self-center><img src="/assets/imgs/musique.svg"></ion-col>\n         \n        </ion-row>\n        <ion-row>\n            <ion-col align-self-center>DJ</ion-col>\n          <ion-col col-auto align-self-center><img src="/assets/imgs/activite.svg"></ion-col>\n         \n        </ion-row>\n        <ion-row>\n            <ion-col align-self-center>Informatique</ion-col>\n          <ion-col col-auto align-self-center><img src="/assets/imgs/profile_as.svg"></ion-col>\n         \n        </ion-row>\n        <ion-row>\n            <ion-col align-self-center>Éclairage</ion-col>\n          <ion-col col-auto align-self-center><img src="/assets/imgs/parametres.svg"></ion-col>\n\n        </ion-row>\n        <ion-row>\n            <ion-col align-self-center>Autres instruments</ion-col>\n          <ion-col col-auto align-self-center><img src="/assets/imgs/parametres.svg"></ion-col>\n\n        </ion-row>\n        <ion-row>\n            <ion-col align-self-center>Librairie</ion-col>\n          <ion-col col-auto align-self-center><img src="/assets/imgs/parametres.svg"></ion-col>\n\n        </ion-row>\n        <ion-row>\n            <ion-col align-self-center>Accessoires</ion-col>\n          <ion-col col-auto align-self-center><img src="/assets/imgs/parametres.svg"></ion-col>\n\n        </ion-row>\n      </ion-grid>\n</ion-content>\n'/*ion-inline-end:"/Users/wamhouse/Desktop/AppWam/Ionic/WeAreMusicos/src/pages/category/category.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavParams */]])
-    ], CategoryPage);
-    return CategoryPage;
-}());
-
-//# sourceMappingURL=category.js.map
 
 /***/ })
 

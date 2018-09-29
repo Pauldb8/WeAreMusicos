@@ -8,7 +8,7 @@
     </ion-title>
     <ion-buttons end>
       <button ion-button icon-only color="white">
-        <ion-icon name="search"></ion-icon>
+        <ion-icon name="search" (click)="ShowHideSearch"></ion-icon>
       </button>
     </ion-buttons>
   </ion-navbar>
@@ -17,7 +17,7 @@
 <offline-menu></offline-menu>
 
 <ion-content>
-  <ion-grid class="search" no-padding hidden>
+  <ion-grid class="search" no-padding [style.visibility]="recherche">
     <ion-row padding>
       <ion-col col-12>
         <h2><ion-icon name="search"></ion-icon> Rechercher</h2>
