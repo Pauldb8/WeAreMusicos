@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 22.998 20.184">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #c6392c;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_241" data-name="Rectangle 241" class="cls-1" width="22.998" height="20.184"/>
+    </clipPath>
+  </defs>
+  <g id="profil" class="cls-2" transform="translate(0 0)">
+    <path id="user-alt" class="cls-1" d="M9.165,11.009c2.724,0,4.6-2.371,4.6-5.5S11.889,0,9.165,0A5.663,5.663,0,0,0,3.645,5.5,5.663,5.663,0,0,0,9.165,11.009Zm3.68,1.835H11c-.761.4-.949,0-1.84,0s-2,.4-2.76,0H4.565a4.507,4.507,0,0,0-4.6,4.587v.917a1.888,1.888,0,0,0,1.84,1.835H15.6a1.888,1.888,0,0,0,1.84-1.835v-.917A4.507,4.507,0,0,0,12.844,12.844Z" transform="translate(2.794)"/>
+  </g>
+</svg>

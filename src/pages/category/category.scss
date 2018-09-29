@@ -1,0 +1,16 @@
+page-category {
+    ion-col{
+        color: #707070;
+        margin: 0px;
+        
+    
+        img{
+          height: 23px;
+        }
+      }
+    
+      ion-row{
+        border-bottom: 1px solid color($colors, light_grey);
+        min-height: 50px;
+      }
+}

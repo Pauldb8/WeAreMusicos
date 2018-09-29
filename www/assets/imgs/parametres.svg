@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 25 27">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #cbcbcb;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_252" data-name="Rectangle 252" class="cls-1" width="25" height="27"/>
+    </clipPath>
+  </defs>
+  <g id="parametres_du_compte" data-name="parametres du compte" class="cls-2">
+    <path id="ellipsis-h" class="cls-1" d="M16.4,13.4c0,2.006-1.994,3-4,3s-3-.994-3-3,.994-4,3-4A4.292,4.292,0,0,1,16.4,13.4Zm5-4c-2.006,0-3,1.994-3,4s.994,3,3,3,4-.994,4-3A4.292,4.292,0,0,0,21.4,9.4Zm-17,0a4.292,4.292,0,0,0-4,4c0,2.006,1.994,3,4,3s3-.994,3-3S6.409,9.4,4.4,9.4Z" transform="translate(-0.403 0.597)"/>
+  </g>
+</svg>

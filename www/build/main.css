@@ -56005,18 +56005,32 @@ footer-toolbar ion-buttons {
   justify-content: space-evenly;
 }
 
-offline-menu ion-avatar > img {
-  height: 100px !important;
-  width: 100px !important;
-  margin: auto;
+offline-menu ion-col {
+  color: #707070;
+  margin: 0px;
 }
 
-offline-menu ion-avatar {
-  text-align: center;
+offline-menu ion-col img {
+  height: 23px;
 }
 
-offline-menu ion-grid > ion-row {
-  height: 100% !important;
+offline-menu ion-row {
+  border-bottom: 1px solid #F8F8F8;
+  min-height: 50px;
+}
+
+page-category ion-col {
+  color: #707070;
+  margin: 0px;
+}
+
+page-category ion-col img {
+  height: 23px;
+}
+
+page-category ion-row {
+  border-bottom: 1px solid #F8F8F8;
+  min-height: 50px;
 }
 
 page-home .search {

@@ -14,27 +14,34 @@ import { Facebook } from '@ionic-native/facebook';
 import { SignInPage } from '../pages/sign-in/sign-in';
 import { FooterToolbarComponent } from '../components/footer-toolbar/footer-toolbar';
 import { OfflineMenuComponent } from '../components/offline-menu/offline-menu'; 
+import { CategoryPage } from '../pages/category/category';
 
 @NgModule({
+  // Add page here
   declarations: [
     MyApp, 
     HomePage,
     ProfilePage,
     SignInPage,
     FooterToolbarComponent,
-    OfflineMenuComponent  
+    OfflineMenuComponent,  
+    CategoryPage,
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     IonicModule.forRoot(MyApp)
   ],
+
+  //and here
+
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
     HomePage,
     ProfilePage,
     SignInPage,
+    CategoryPage,
   ],
   providers: [
     StatusBar,

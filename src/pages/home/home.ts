@@ -5,6 +5,7 @@ import { ApiProvider } from '../../providers/api/api';
 import { ProfilePage } from '../profile/profile';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SignInPage } from '../sign-in/sign-in';
+import { CategoryPage } from '../category/category';
 
 @Component({
   selector: 'page-home',
@@ -28,7 +29,7 @@ export class HomePage {
   }
 
   openProfile(){
-    this.navCtrl.push(ProfilePage);
+    this.navCtrl.push(CategoryPage) ;
   }
 
   login(){
@@ -39,4 +40,4 @@ export class HomePage {
     this.statusBar.show(); 
   }
 }
- 
+  

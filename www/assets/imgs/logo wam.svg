@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.309 23.317">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #cbcbcb;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="logo_wam" data-name="logo wam" transform="translate(-165.96 -6.165)">
+    <path id="Tracé_8" data-name="Tracé 8" class="cls-1" d="M522.6,413.422l3.681.013,2.576,9.907,6.721,0-3.565,13.4-3.7-.011-2.553-9.945h-2.711l-2.586,9.95h-3.682l-3.515-13.4h6.71Z" transform="translate(-347.311 -407.257)"/>
+    <path id="Tracé_9" data-name="Tracé 9" class="cls-2" d="M624.26,494.247l.658-2.569.434,1.6.051.188.213.784Z" transform="translate(-447.93 -478.203)"/>
+    <path id="Tracé_10" data-name="Tracé 10" class="cls-2" d="M688.4,556.445h1.366l-.667,2.611Z" transform="translate(-506.081 -536.919)"/>
+    <path id="Tracé_11" data-name="Tracé 11" class="cls-2" d="M561.935,556.422H563.3l-.67,2.618Z" transform="translate(-391.428 -536.898)"/>
+  </g>
+</svg>

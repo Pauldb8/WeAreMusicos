@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 23">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: #cbcbcb;
+      }
+
+      .cls-1 {
+        stroke: #707070;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_246" data-name="Rectangle 246" class="cls-1" width="24" height="23" transform="translate(18 527)"/>
+    </clipPath>
+  </defs>
+  <g id="vendre_du_matos" data-name="vendre du matos" class="cls-2" transform="translate(-18 -527)">
+    <path id="dolly" class="cls-3" d="M12.258,11.57A6.07,6.07,0,0,1,14.32,12.6l6.729-2.242a.665.665,0,0,0,.421-.842l-2.517-7.55a.665.665,0,0,0-.842-.421l-2.546.85,1.379,4.142-2.529.837L13.037,3.233l-2.567.854a.665.665,0,0,0-.421.842l2.208,6.641ZM23.966,13.6l-.425-1.267a.665.665,0,0,0-.842-.421l-8.9,2.967a3.981,3.981,0,0,0-3.062-1.542L6.6.912A1.335,1.335,0,0,0,5.333,0H.667A.669.669,0,0,0,0,.667V2a.669.669,0,0,0,.667.667h3.7L8.212,14.2a3.972,3.972,0,0,0-1.5,3.771,4,4,0,0,0,7.946-.558l8.887-2.967A.667.667,0,0,0,23.966,13.6Zm-13.3,5.733a2,2,0,1,1,2-2A2,2,0,0,1,10.666,19.333Z" transform="translate(18 527.834)"/>
+  </g>
+</svg>
