@@ -1,4 +1,9 @@
 page-category {
+
+   ion-content {
+    background-color: #F4F4F4!important;
+   }
+
     ion-col{
         color: #707070;
         margin: 0px;
@@ -6,11 +11,27 @@ page-category {
     
         img{
           height: 23px;
+          border-radius: 50%;
+          height: 25px;
+          width: 25px;
+
         }
       }
     
       ion-row{
         border-bottom: 1px solid color($colors, light_grey);
         min-height: 50px;
+        background-color: #FFFFFF!important;
+        padding: 12px 18px 12px 18px;
       }
+    
+          h3 {
+            padding: 0px 18px 0px 18px;
+            font-size: 1em;
+            font-weight: normal;
+            color:#707070;
+          }
+        .faded {
+            color: #CBCBCB ;
+        }
 }

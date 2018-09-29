@@ -27,7 +27,7 @@ export class HomePage {
       console.log(this.services); 
     });  
   }
-
+ 
   openProfile(){
     this.navCtrl.push(CategoryPage) ;
   }

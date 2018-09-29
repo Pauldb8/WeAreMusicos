@@ -42,7 +42,7 @@ import { CategoryPage } from '../pages/category/category';
     ProfilePage,
     SignInPage,
     CategoryPage,
-  ],
+  ], 
   providers: [
     StatusBar,
     SplashScreen,
