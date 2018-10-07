@@ -32,7 +32,7 @@ export class HomePage {
  
   openProfile(){
     this.navCtrl.push(CategoryPage) ;
-  }
+  } 
 
   login(){
     this.navCtrl.push(SignInPage); 

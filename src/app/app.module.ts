@@ -26,6 +26,7 @@ import { CategoryPage } from '../pages/category/category';
     FooterToolbarComponent,
     OfflineMenuComponent,  
     CategoryPage,
+    GuitarPage,
   ],
   imports: [
     BrowserModule,
@@ -37,11 +38,14 @@ import { CategoryPage } from '../pages/category/category';
 
   bootstrap: [IonicApp],
   entryComponents: [
+
     MyApp,
     HomePage,
     ProfilePage,
     SignInPage,
     CategoryPage,
+    GuitarPage,
+  
   ], 
   providers: [
     StatusBar,
