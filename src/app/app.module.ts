@@ -27,7 +27,7 @@ import { GuitarPage } from '../pages/guitar/guitar';
     FooterToolbarComponent,
     OfflineMenuComponent,  
     CategoryPage,
-    Guita,
+    GuitarPage,
   ],
   imports: [
     BrowserModule,
