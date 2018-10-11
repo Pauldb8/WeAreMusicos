@@ -15,6 +15,7 @@ import { SignInPage } from '../pages/sign-in/sign-in';
 import { FooterToolbarComponent } from '../components/footer-toolbar/footer-toolbar';
 import { OfflineMenuComponent } from '../components/offline-menu/offline-menu'; 
 import { CategoryPage } from '../pages/category/category';
+import { GuitarPage } from '../pages/guitar/guitar';
 
 @NgModule({
   // Add page here
@@ -26,7 +27,7 @@ import { CategoryPage } from '../pages/category/category';
     FooterToolbarComponent,
     OfflineMenuComponent,  
     CategoryPage,
-    GuitarPage,
+    Guita,
   ],
   imports: [
     BrowserModule,
