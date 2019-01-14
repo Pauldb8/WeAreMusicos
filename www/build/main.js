@@ -447,7 +447,7 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_13__components_footer_toolbar_footer_toolbar__["a" /* FooterToolbarComponent */],
                 __WEBPACK_IMPORTED_MODULE_14__components_offline_menu_offline_menu__["a" /* OfflineMenuComponent */],
                 __WEBPACK_IMPORTED_MODULE_15__pages_category_category__["a" /* CategoryPage */],
-                Guita,
+                __WEBPACK_IMPORTED_MODULE_16__pages_guitar_guitar__["a" /* GuitarPage */],
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],

@@ -44,6 +44,7 @@
   },
   "devDependencies": {
     "@ionic/app-scripts": "3.1.11",
+    "@ionic/lab": "1.0.18",
     "typescript": "~2.6.2"
   },
   "description": "We Are Musicos is a platform for music and its corresponding services.",
