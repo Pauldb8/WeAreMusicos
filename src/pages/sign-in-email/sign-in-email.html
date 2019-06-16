@@ -3,7 +3,7 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content>
   <ion-row>
     <ion-col>
       <p text-center> 
@@ -19,49 +19,23 @@
       </h1>
     </ion-col>
   </ion-row>
-  <ion-grid>
-    <ion-row class="fill">
+  <ion-grid no-padding>
+    <ion-row margin-bottom>
       <ion-col no-padding>
-        <h2 text-center>
-          <br>
-          Découvrez vos nouveaux outils<br>
-          pour booster vos projets musicaux.
-        </h2>
-        <button ion-button full (click)="loginWithFB()" color="facebook" icon-start>
-          <ion-icon name="logo-facebook" style="color:white;" ></ion-icon> 
-          Se connecter avec Facebook 
-        </button>
-        <br>
-        <button ion-button full color="email" icon-start>
-          <ion-icon name="mail" style="color: white;"></ion-icon> 
-          Se connecter avec un email
-        </button>
-        <br>
-        <div class="myflexcontainer">
-          <div class="myflex">
-            <hr class="small" float-left>
-            <p text-center style="color:white;" float-left>Ou</p>
-            <hr class="small">   
-          </div>
-        </div>
-        <br>
-        <button ion-button color="dark" full icon-start>
-          <ion-icon name="create" style="color: white;"></ion-icon>
-          Créez votre compte
-        </button>
+        <input type="email" name="email" placeholder="E-mail" class="first-input"/>
+        <input type="password" name="password" palceholder="Mot de passe"/>
       </ion-col>
     </ion-row>
-    <ion-row style="height: 150px;">
-      <ion-col no-padding align-self-center>
-        <ion-card *ngIf="userData" no-margin> 
-          <ion-item>
-            <ion-avatar item-start>
-              <img src="{{ userData.picture }}">
-            </ion-avatar>
-            <h2> {{ userData.username }} </h2>
-            <p>{{ userData.email }}</p>
-          </ion-item>
-        </ion-card>
+    <ion-row padding-right padding-left>
+      <ion-col>
+        <button ion-button full color="email">
+          Se connecter
+        </button>
+        <br>
+        <p text-center>
+          Mot de passe oublié ?<br>
+          Créer un compte
+        </p>
       </ion-col>
     </ion-row>
   </ion-grid>

@@ -16,6 +16,7 @@ import { FooterToolbarComponent } from '../components/footer-toolbar/footer-tool
 import { OfflineMenuComponent } from '../components/offline-menu/offline-menu'; 
 import { CategoryPage } from '../pages/category/category';
 import { GuitarPage } from '../pages/guitar/guitar';
+import { SignInEmailPage } from '../pages/sign-in-email/sign-in-email';
 
 @NgModule({
   // Add page here
@@ -28,6 +29,7 @@ import { GuitarPage } from '../pages/guitar/guitar';
     OfflineMenuComponent,  
     CategoryPage,
     GuitarPage,
+    SignInEmailPage,
   ],
   imports: [
     BrowserModule,
@@ -46,7 +48,7 @@ import { GuitarPage } from '../pages/guitar/guitar';
     SignInPage,
     CategoryPage,
     GuitarPage,
-  
+    SignInEmailPage
   ], 
   providers: [
     StatusBar,

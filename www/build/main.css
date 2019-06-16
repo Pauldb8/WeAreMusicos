@@ -56339,6 +56339,8 @@ page-sign-in-email h2 {
 
 page-sign-in-email p {
   margin: 0px;
+  color: #FFFFFF;
+  line-height: 21px;
 }
 
 page-sign-in-email .card-md {
@@ -56380,4 +56382,20 @@ page-sign-in-email .myflex {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+page-sign-in-email input {
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  width: 100%;
+  padding: 24px 20px 24px 20px;
+  color: #707070;
+}
+
+page-sign-in-email .first-input {
+  border-bottom: 1px solid #707070;
+}
+
+page-sign-in-email .padding-horizontal-xl {
+  padding: 0px 32px !important;
 }

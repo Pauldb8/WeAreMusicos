@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { SignInPage } from '../sign-in/sign-in';
 
 /**
  * Generated class for the SignInEmailPage page.
@@ -20,6 +21,10 @@ export class SignInEmailPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad SignInEmailPage');
+  }
+
+  loginWithEmail(){
+    this.navCtrl.push(SignInPage);
   }
 
 }

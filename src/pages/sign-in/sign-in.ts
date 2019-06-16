@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { Facebook, FacebookLoginResponse } from '@ionic-native/facebook';
 import { StatusBar } from '@ionic-native/status-bar';
+import { SignInEmailPage } from '../sign-in-email/sign-in-email';
 
 /**
  * Generated class for the SignInPage page.
@@ -40,6 +41,10 @@ export class SignInPage {
     }).catch((err) => {
       console.log(err);
     });
+  }
+
+  loginWithEmail(){
+    this.navCtrl.push(SignInEmailPage);
   }
 
 }
