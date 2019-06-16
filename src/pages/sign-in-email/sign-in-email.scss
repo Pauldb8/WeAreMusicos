@@ -1,0 +1,88 @@
+page-sign-in-email {
+    ion-content{
+      background-image: url('../../assets/imgs/bg_sign_in.jpg');
+      background-size: cover;
+      background-color: #2E2E2E;
+      background-position-x: 85%;
+      background-position-y: 50%;
+    }
+  
+    ion-avatar{
+      padding-left: 8px;
+    }
+  
+    ion-card{
+      h2{
+        line-height: 1.5em;
+        letter-spacing: 0px;
+      }
+    }
+  
+    ion-navbar{
+      box-shadow: none;
+    }
+  
+    ion-header ion-icon.back-button-icon.icon{
+      color: color($colors, white);
+    }
+  
+    ion-grid{
+      height: 100%;
+      display: flex;
+      flex-flow: columns;
+    }
+  
+    .fill{
+      flex: 1;
+      overflow: auto;
+      align-items: center;
+    }
+  
+    h1{
+      color: color($colors, black);
+      font-family: "Arial";
+      font-weight: bold;
+      font-size: 2em;
+      letter-spacing: -2px;
+      line-height: 0.7em;
+  
+      span{
+        font-weight: normal;
+        font-size: 0.5em;
+        letter-spacing: 0px;
+      }
+    }
+  
+    h2{
+      letter-spacing: -2px;
+      color: color($colors, white);
+      text-shadow: 0px 0px 5px black;
+    }
+  
+    p{
+      margin: 0px; 
+    }
+  
+    .card-md{
+      width: 100% !important;
+    }
+  
+    .small{
+      background-color: white;
+      width: 135px;
+    }
+  
+    .myflexcontainer{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    .myflex{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+  
+  }
+   

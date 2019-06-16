@@ -25,7 +25,7 @@ export class FooterToolbarComponent {
     this.navCtrl.push(ProfilePage);
   }
 
-  login(){
+  seconnecter(){
     this.navCtrl.push(SignInPage); 
   } 
 
