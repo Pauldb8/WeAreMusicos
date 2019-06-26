@@ -56029,40 +56029,33 @@ offline-menu ion-row {
   min-height: 50px;
 }
 
+page-category .button-inner {
+  color: white;
+}
+
 page-category ion-content {
   background-color: #F4F4F4 !important;
 }
 
-page-category ion-col {
+page-category h2 {
   color: #707070;
-  margin: 0px;
-}
-
-page-category ion-col img {
-  height: 25px;
-  width: 25px;
-  border-radius: 50%;
-  -o-object-fit: cover;
-  object-fit: cover;
-  border: 1px solid #CBCBCB;
+  font-size: 1.2em;
+  padding: 00px 20px;
+  font-style: Arial;
+  font-weight: 200;
 }
 
 page-category ion-row {
   border-bottom: 1px solid #F8F8F8;
   min-height: 50px;
-  background-color: #FFFFFF !important;
-  padding: 12px 18px 12px 18px;
+  background-color: white;
 }
 
-page-category h3 {
-  padding: 0px 18px 0px 18px;
-  font-size: 1em;
-  font-weight: normal;
+page-category ion-col {
   color: #707070;
-}
-
-page-category .faded {
-  color: #CBCBCB;
+  margin: 0px;
+  font-weight: 400;
+  padding: 15px 20px !important;
 }
 
 page-home .search {

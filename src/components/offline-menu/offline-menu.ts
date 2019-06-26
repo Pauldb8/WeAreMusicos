@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { CategoryPage } from '../../pages/category/category';
+import { NavController } from 'ionic-angular';
 
 /**
  * Generated class for the OfflineMenuComponent component.
@@ -12,7 +14,11 @@ import { Component } from '@angular/core';
 })
 export class OfflineMenuComponent {
 
-  constructor() {
+  constructor(public navCtrl: NavController) {
+  }
+
+  openCategory(){
+    this.navCtrl.push(CategoryPage) ;
   }
  
 }

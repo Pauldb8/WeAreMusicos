@@ -1,11 +1,11 @@
-webpackJsonp([1],{
+webpackJsonp([2],{
 
-/***/ 103:
+/***/ 104:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ApiProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(102);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(103);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -72,13 +72,13 @@ var ApiProvider = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 104:
+/***/ 105:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SignInEmailPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__sign_in_sign_in__ = __webpack_require__(46);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -122,7 +122,7 @@ var SignInEmailPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 116:
+/***/ 117:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -135,16 +135,20 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 116;
+webpackEmptyAsyncContext.id = 117;
 
 /***/ }),
 
-/***/ 158:
+/***/ 159:
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	"../pages/sign-in-email/sign-in-email.module": [
+	"../pages/category/category.module": [
 		284,
+		1
+	],
+	"../pages/sign-in-email/sign-in-email.module": [
+		285,
 		0
 	]
 };
@@ -159,23 +163,23 @@ function webpackAsyncContext(req) {
 webpackAsyncContext.keys = function webpackAsyncContextKeys() {
 	return Object.keys(map);
 };
-webpackAsyncContext.id = 158;
+webpackAsyncContext.id = 159;
 module.exports = webpackAsyncContext;
 
 /***/ }),
 
-/***/ 201:
+/***/ 202:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__node_modules_angular_common_http__ = __webpack_require__(102);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_api_api__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__node_modules_angular_common_http__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_api_api__ = __webpack_require__(104);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(48);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__sign_in_sign_in__ = __webpack_require__(46);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__category_category__ = __webpack_require__(202);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__category_category__ = __webpack_require__(53);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -242,59 +246,14 @@ var HomePage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 202:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CategoryPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-/**
- * Generated class for the CategoryPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var CategoryPage = /** @class */ (function () {
-    function CategoryPage(navCtrl, navParams) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-    }
-    CategoryPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad CategoryPage');
-    };
-    CategoryPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-category',template:/*ion-inline-start:"/home/pauldb/IonicProjects/WeAreMusicos/src/pages/category/category.html"*/'<!--\n  Generated template for the CategoryPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>categorie guitare</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content no-padding>\n    <ion-grid no-padding>\n\n\n        <h3>Catégories</h3>\n\n      \n        <ion-row>\n            <ion-col align-self-center>Guitare</ion-col>\n          <ion-col col-auto align-self-center>\n            <ion-avatar item-start>  \n              <img src="/assets/imgs/studio.png" class="round"></ion-avatar></ion-col>\n            \n        </ion-row>\n        <ion-row>\n            <ion-col align-self-center>Basse</ion-col>\n          <ion-col col-auto align-self-center><img src="/assets/imgs/photo4.jpg" class="round"></ion-col> \n          \n        </ion-row>\n        <ion-row>\n            <ion-col align-self-center>Batterie</ion-col>\n          <ion-col col-auto align-self-center><img src="/assets/imgs/publier.svg"></ion-col>\n          \n        </ion-row>\n        <ion-row>\n            <ion-col align-self-center>Piano</ion-col>\n          <ion-col col-auto align-self-center><img src="/assets/imgs/messagerie.svg"></ion-col>\n         \n        </ion-row>\n        <ion-row>\n            <ion-col align-self-center>Synthétiseur</ion-col>\n          <ion-col col-auto align-self-center><img src="/assets/imgs/service.svg"></ion-col>\n         \n        </ion-row>\n        <ion-row>\n            <ion-col align-self-center>Clavier</ion-col>\n          <ion-col col-auto align-self-center><img src="/assets/imgs/vendre.svg"></ion-col>\n          \n        </ion-row>\n        <ion-row>\n            <ion-col align-self-center>Instruments à vent</ion-col>\n          <ion-col col-auto align-self-center><img src="/assets/imgs/publier.svg"></ion-col>\n          \n        </ion-row>\n        <ion-row>\n            <ion-col align-self-center>Sonorisation</ion-col>\n          <ion-col col-auto align-self-center><img src="/assets/imgs/calendrier.svg"></ion-col>\n         \n        </ion-row>\n        <ion-row>\n            <ion-col align-self-center>Pro audio</ion-col>\n          <ion-col col-auto align-self-center><img src="/assets/imgs/musique.svg"></ion-col>\n         \n        </ion-row>\n        <ion-row>\n            <ion-col align-self-center>DJ</ion-col>\n          <ion-col col-auto align-self-center><img src="/assets/imgs/activite.svg"></ion-col>\n         \n        </ion-row>\n        <ion-row>\n            <ion-col align-self-center>Informatique</ion-col>\n          <ion-col col-auto align-self-center><img src="/assets/imgs/profile_as.svg"></ion-col>\n         \n        </ion-row>\n        <ion-row>\n            <ion-col align-self-center>Éclairage</ion-col>\n          <ion-col col-auto align-self-center><img src="/assets/imgs/parametres.svg"></ion-col>\n\n        </ion-row>\n        <ion-row>\n            <ion-col align-self-center>Autres instruments</ion-col>\n          <ion-col col-auto align-self-center><img src="/assets/imgs/parametres.svg"></ion-col>\n\n        </ion-row>\n        <ion-row>\n            <ion-col align-self-center>Librairie</ion-col>\n          <ion-col col-auto align-self-center><img src="/assets/imgs/parametres.svg"></ion-col>\n\n        </ion-row>\n        <ion-row>\n            <ion-col align-self-center>Accessoires</ion-col>\n          <ion-col col-auto align-self-center><img src="/assets/imgs/parametres.svg"></ion-col>\n\n        </ion-row>\n      </ion-grid>\n</ion-content>\n'/*ion-inline-end:"/home/pauldb/IonicProjects/WeAreMusicos/src/pages/category/category.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
-    ], CategoryPage);
-    return CategoryPage;
-}());
-
-//# sourceMappingURL=category.js.map
-
-/***/ }),
-
 /***/ 203:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProfilePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_api_api__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_api_api__ = __webpack_require__(104);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_file_chooser__ = __webpack_require__(204);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -384,22 +343,22 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(31);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(200);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(201);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(48);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(275);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_home_home__ = __webpack_require__(201);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__angular_common_http__ = __webpack_require__(102);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__providers_api_api__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_home_home__ = __webpack_require__(202);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__angular_common_http__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__providers_api_api__ = __webpack_require__(104);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_profile_profile__ = __webpack_require__(203);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ionic_native_file_chooser__ = __webpack_require__(204);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__ionic_native_facebook__ = __webpack_require__(159);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__ionic_native_facebook__ = __webpack_require__(160);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_sign_in_sign_in__ = __webpack_require__(46);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_footer_toolbar_footer_toolbar__ = __webpack_require__(281);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_offline_menu_offline_menu__ = __webpack_require__(282);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_category_category__ = __webpack_require__(202);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_category_category__ = __webpack_require__(53);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_guitar_guitar__ = __webpack_require__(283);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_sign_in_email_sign_in_email__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_sign_in_email_sign_in_email__ = __webpack_require__(105);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -446,6 +405,7 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_7__angular_common_http__["b" /* HttpClientModule */],
                 __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* MyApp */], {}, {
                     links: [
+                        { loadChildren: '../pages/category/category.module#CategoryPageModule', name: 'CategoryPage', segment: 'category', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/sign-in-email/sign-in-email.module#SignInEmailPageModule', name: 'SignInEmailPage', segment: 'sign-in-email', priority: 'low', defaultHistory: [] }
                     ]
                 })
@@ -484,10 +444,10 @@ var AppModule = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(48);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(200);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(201);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(201);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(202);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -534,7 +494,7 @@ var MyApp = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FooterToolbarComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pages_profile_profile__ = __webpack_require__(203);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pages_sign_in_sign_in__ = __webpack_require__(46);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -588,6 +548,8 @@ var FooterToolbarComponent = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return OfflineMenuComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pages_category_category__ = __webpack_require__(53);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(15);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -598,6 +560,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
+
 /**
  * Generated class for the OfflineMenuComponent component.
  *
@@ -605,13 +569,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  * Components.
  */
 var OfflineMenuComponent = /** @class */ (function () {
-    function OfflineMenuComponent() {
+    function OfflineMenuComponent(navCtrl) {
+        this.navCtrl = navCtrl;
     }
+    OfflineMenuComponent.prototype.openCategory = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_1__pages_category_category__["a" /* CategoryPage */]);
+    };
     OfflineMenuComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'offline-menu',template:/*ion-inline-start:"/home/pauldb/IonicProjects/WeAreMusicos/src/components/offline-menu/offline-menu.html"*/'<ion-nav #offline_menu [root]="rootPage"></ion-nav>\n\n<ion-menu [content]="offline_menu">\n\n  <ion-header>\n    <ion-toolbar>\n      <ion-title text-center>Menu</ion-title>\n    </ion-toolbar>\n  </ion-header>\n\n  <ion-content>\n    <ion-grid>\n      <ion-row>\n        <ion-col col-auto align-self-center><img src="/assets/imgs/wamlogo_dark_grey.svg"></ion-col>\n        <ion-col align-self-center>Actualités</ion-col>\n      </ion-row>\n      <ion-row>\n        <ion-col col-auto align-self-center><img src="/assets/imgs/profil.svg"></ion-col>\n        <ion-col align-self-center>Profil</ion-col>\n      </ion-row>\n      <ion-row>\n        <ion-col col-auto align-self-center><img src="/assets/imgs/publier.svg"></ion-col>\n        <ion-col align-self-center>Publier</ion-col>\n      </ion-row>\n      <ion-row>\n        <ion-col col-auto align-self-center><img src="/assets/imgs/messagerie.svg"></ion-col>\n        <ion-col align-self-center>Messagerie</ion-col>\n      </ion-row>\n      <ion-row>\n        <ion-col col-auto align-self-center><img src="/assets/imgs/service.svg"></ion-col>\n        <ion-col align-self-center>Proposer des services</ion-col>\n      </ion-row>\n      <ion-row>\n        <ion-col col-auto align-self-center><img src="/assets/imgs/vendre.svg"></ion-col>\n        <ion-col align-self-center>Vendre du matons</ion-col>\n      </ion-row>\n      <ion-row>\n        <ion-col col-auto align-self-center><img src="/assets/imgs/publier.svg"></ion-col>\n        <ion-col align-self-center>Question à la communauté</ion-col>\n      </ion-row>\n      <ion-row>\n        <ion-col col-auto align-self-center><img src="/assets/imgs/calendrier.svg"></ion-col>\n        <ion-col align-self-center>Événements de la communauté</ion-col>\n      </ion-row>\n      <ion-row>\n        <ion-col col-auto align-self-center><img src="/assets/imgs/musique.svg"></ion-col>\n        <ion-col align-self-center>Musique</ion-col>\n      </ion-row>\n      <ion-row>\n        <ion-col col-auto align-self-center><img src="/assets/imgs/activite.svg"></ion-col>\n        <ion-col align-self-center>Accéder à mes activités</ion-col>\n      </ion-row>\n      <ion-row>\n        <ion-col col-auto align-self-center><img src="/assets/imgs/profile_as.svg"></ion-col>\n        <ion-col align-self-center>Voir son profil en tant que...</ion-col>\n      </ion-row>\n      <ion-row>\n        <ion-col col-auto align-self-center><img src="/assets/imgs/parametres.svg"></ion-col>\n        <ion-col align-self-center>Paramètres du compte</ion-col>\n      </ion-row>\n    </ion-grid>\n  </ion-content>\n</ion-menu>'/*ion-inline-end:"/home/pauldb/IonicProjects/WeAreMusicos/src/components/offline-menu/offline-menu.html"*/
+            selector: 'offline-menu',template:/*ion-inline-start:"/home/pauldb/IonicProjects/WeAreMusicos/src/components/offline-menu/offline-menu.html"*/'<ion-nav #offline_menu [root]="rootPage"></ion-nav>\n\n<ion-menu [content]="offline_menu">\n\n  <ion-header>\n    <ion-toolbar>\n      <ion-title text-center>Menu</ion-title>\n    </ion-toolbar>\n  </ion-header>\n\n  <ion-content>\n    <ion-grid>\n      <ion-row>\n        <ion-col col-auto align-self-center><img src="/assets/imgs/wamlogo_dark_grey.svg"></ion-col>\n        <ion-col align-self-center>Actualités</ion-col>\n      </ion-row>\n      <ion-row>\n        <ion-col col-auto align-self-center><img src="/assets/imgs/profil.svg"></ion-col>\n        <ion-col align-self-center>Profil</ion-col>\n      </ion-row>\n      <ion-row>\n        <ion-col col-auto align-self-center><img src="/assets/imgs/publier.svg"></ion-col>\n        <ion-col align-self-center>Publier</ion-col>\n      </ion-row>\n      <ion-row>\n        <ion-col col-auto align-self-center><img src="/assets/imgs/messagerie.svg"></ion-col>\n        <ion-col align-self-center>Messagerie</ion-col>\n      </ion-row>\n      <ion-row (click)="openCategory()">\n        <ion-col col-auto align-self-center><img src="/assets/imgs/.svg"></ion-col>\n        <ion-col align-self-center>Catégories</ion-col>\n      </ion-row>\n      <ion-row>\n        <ion-col col-auto align-self-center><img src="/assets/imgs/service.svg"></ion-col>\n        <ion-col align-self-center>Proposer des services</ion-col>\n      </ion-row>\n      <ion-row>\n        <ion-col col-auto align-self-center><img src="/assets/imgs/vendre.svg"></ion-col>\n        <ion-col align-self-center>Vendre du matons</ion-col>\n      </ion-row>\n      <ion-row> \n        <ion-col col-auto align-self-center><img src="/assets/imgs/publier.svg"></ion-col>\n        <ion-col align-self-center>Question à la communauté</ion-col>\n      </ion-row>\n      <ion-row>\n        <ion-col col-auto align-self-center><img src="/assets/imgs/calendrier.svg"></ion-col>\n        <ion-col align-self-center>Événements de la communauté</ion-col>\n      </ion-row>\n      <ion-row>\n        <ion-col col-auto align-self-center><img src="/assets/imgs/musique.svg"></ion-col>\n        <ion-col align-self-center>Musique</ion-col>\n      </ion-row>\n      <ion-row>\n        <ion-col col-auto align-self-center><img src="/assets/imgs/activite.svg"></ion-col>\n        <ion-col align-self-center>Accéder à mes activités</ion-col>\n      </ion-row>\n      <ion-row>\n        <ion-col col-auto align-self-center><img src="/assets/imgs/profile_as.svg"></ion-col>\n        <ion-col align-self-center>Voir son profil en tant que...</ion-col>\n      </ion-row>\n      <ion-row>\n        <ion-col col-auto align-self-center><img src="/assets/imgs/parametres.svg"></ion-col>\n        <ion-col align-self-center>Paramètres du compte</ion-col>\n      </ion-row>\n    </ion-grid>\n  </ion-content>\n</ion-menu>'/*ion-inline-end:"/home/pauldb/IonicProjects/WeAreMusicos/src/components/offline-menu/offline-menu.html"*/
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["e" /* NavController */]])
     ], OfflineMenuComponent);
     return OfflineMenuComponent;
 }());
@@ -626,7 +594,7 @@ var OfflineMenuComponent = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GuitarPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -671,10 +639,10 @@ var GuitarPage = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SignInPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_facebook__ = __webpack_require__(159);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_facebook__ = __webpack_require__(160);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_status_bar__ = __webpack_require__(48);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__sign_in_email_sign_in_email__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__sign_in_email_sign_in_email__ = __webpack_require__(105);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -736,6 +704,51 @@ var SignInPage = /** @class */ (function () {
 }());
 
 //# sourceMappingURL=sign-in.js.map
+
+/***/ }),
+
+/***/ 53:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CategoryPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/**
+ * Generated class for the CategoryPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var CategoryPage = /** @class */ (function () {
+    function CategoryPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+    }
+    CategoryPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad CategoryPage');
+    };
+    CategoryPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-category',template:/*ion-inline-start:"/home/pauldb/IonicProjects/WeAreMusicos/src/pages/category/category.html"*/'<ion-header no-border>\n  <ion-navbar> \n    <ion-title text-center>\n      CATÉGORIES\n    </ion-title>\n    <ion-buttons end>\n        <button ion-button icon-only color="white">\n          OK\n        </button>\n      </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content>\n  <h2>Je voudrais...</h2>\n  <ion-row>\n    <ion-col align-self: center>\n      Afficher toutes les catégories (par défaut)\n    </ion-col>\n  </ion-row>\n  <ion-row>\n    <ion-col>\n      Trouver des "Musicos"\n    </ion-col>\n  </ion-row>\n  <ion-row>\n    <ion-col>\n      Trouver des services\n    </ion-col>\n  </ion-row>\n  <ion-row>\n    <ion-col>\n      Acheter ou me renseigner sur du "matos"\n    </ion-col>\n  </ion-row>\n  <ion-row>\n    <ion-col>\n      Répondre aux questions de la communauté\n    </ion-col>\n  </ion-row>\n  <ion-row>\n    <ion-col>\n      Voir le fil d\'actualité de mes contacts\n    </ion-col>\n  </ion-row>\n  <ion-row>\n    <ion-col>\n      Voir le fil d\'actualité public\n    </ion-col>\n  </ion-row>\n  <ion-row>\n    <ion-col>\n      Voir les évènements de la communauté\n    </ion-col>\n  </ion-row>\n  <ion-row>\n    <ion-col>\n      Écouter de la musique\n    </ion-col>\n  </ion-row>\n  <ion-row>\n    <ion-col>\n      Autre...\n    </ion-col>\n  </ion-row>\n\n</ion-content>\n'/*ion-inline-end:"/home/pauldb/IonicProjects/WeAreMusicos/src/pages/category/category.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
+    ], CategoryPage);
+    return CategoryPage;
+}());
+
+//# sourceMappingURL=category.js.map
 
 /***/ })
 
